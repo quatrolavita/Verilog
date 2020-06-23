@@ -1,0 +1,11 @@
+
+`timescale 1ns/10ps
+
+module output_unit(i_add_0, i_add_1, i_sub_0, i_sub_1, i_mul_0, i_mul_1,
+						i_div_0, i_div_1, i_shift_0, i_shift_1, i_addc_0, i_addc_1,
+						i_subc_0, i_subc_1, i_mulc_0, i_mulc_1, i_divc_0, i_divc_1, 
+						i_sel, o_1, O_2);
+						
+
+						
+parameter WIDTH = 16;

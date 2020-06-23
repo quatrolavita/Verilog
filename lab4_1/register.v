@@ -1,0 +1,26 @@
+`timescale 1ns/10ps
+
+
+module register(i_clk, i_d, i_rst, i_set, o_q);
+
+parameter WIDTH = 8;
+
+input i_clk; //clock
+input [WIDTH-1:0] i_d; 	// input data
+input i_set;
+input i_rst; //  reset 
+
+output reg [WIDTH-1:0] o_q; // output data
+
+
+always @(posedge i_clk) begin
+	if (i_rst) begin
+		o_q <= {WIDTH{1'b0}};
+	end else if (i_set) begin
+		o_q <= 8'b11111111;
+	end else  begin
+		o_q <= i_d;
+	end
+end
+
+endmodule

@@ -1,0 +1,12 @@
+
+`timescale 1ns/10ps
+
+
+module complex_mul (re_A, im_A, re_B, im_B, re_C, im_C);
+
+parameter WIDTH = 16;
+
+input [`WIDTH-1:0] re_A, re_B, im_A, im_B;
+
+output reg [`WIDTH-1:0] re_C, im_C;
+
